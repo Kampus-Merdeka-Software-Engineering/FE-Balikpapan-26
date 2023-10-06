@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Dental Fusion</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo1.jpeg" alt="Klinik Gigi">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="dokter.html">Dokter</a></li>
+                <li><a href="testimoni.html">Testimoni</a></li>
+                <li><a href="konsul.html">Jadwalkan</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda" class="hero">
+        <h1>Selamat Datang di Dental Fusion Kami</h1>
+        <p>Kami siap memberikan pelayanan terbaik untuk kesehatan gigi Anda.</p>
+        <a href="konsul.html" class="btn">Jadwalkan Konsultasi</a>
+    </section>
+
+    <div class="container">
+        <form id="booking-form" action="" method="">
+            <label for="medical-record-number">Nomor Rekam Medis:</label>
+            <input type="text" id="medical-record-number" name="medical-record-number" readonly>
+   
+            <label for="full-name">Nama Lengkap:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone-number">Nomor Telepon:</label>
+            <input type="text" id="phone-number" name="phone-number" required>
+
+            <label for="treatment-name">Nama Perawatan:</label>
+            <select id="treatment-name" name="treatment-name" required>
+                <option value="Pembersihan Gigi">Pembersihan Gigi</option>
+                <option value="Perawatan Akar Gigi">Perawatan Akar Gigi</option>
+                <option value="Pencabutan Gigi">Pencabutan Gigi</option>
+                <option value="Konsultasi Gigi">Konsultasi Gigi</option>
+            </select>
+
+            <label for="doctor-name">Nama Dokter:</label>
+            <select id="doctor-name" name="doctor-name" required>
+                <option value="Drg. Fathiah. M.Kes">Drg. Fathiah. M.Kes</option>
+                <option value="Drg. Hanny Putri M.Kes">Drg. Hanny Putri M.Kes</option>
+                <option value="Drg. Sarah Andriani">Drg. Sarah Andriani</option>
+                <option value="Drg. Kusuma Bima Dharma, sp.KG">Drg. Kusuma Bima Dharma, sp.KG</option>
+                <option value="Drg. Heru Tiono">Drg. Heru Tiono</option>
+                <option value="Drg. Abraham Ahmad">Drg. Abraham Ahmad</option>
+            </select>
+
+            <label for="booking-date">Tanggal Booking:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+
+            <label for="complaint">Keluhan:</label>
+            <textarea id="complaint" name="complaint" rows="4" required></textarea>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+   <!-- Kalo mau tambahin konten lainnya di sini -->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Tentang Kami</h3>
+                <p>Klinik Gigi adalah tempat terbaik untuk merawat gigi Anda. Tim kami terdiri dari para profesional gigi yang berdedikasi.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Tautan Berguna</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="dokter.html">Dokter</a></li>
+                    <li><a href="testimoni.html">Testimoni</a></li>
+                    <li><a href="konsul.html">Jadwalkan</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </div>
+            <div id="kontak" class="footer-section contact">
+                <h3>Kontak</h3>
+                <p>Jl. Contoh No. 123</p>
+                <p>Email: info@dentalFusion.com</p>
+                <p>Telepon: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Dental Fusion. Hak Cipta Dilindungi.
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
+
