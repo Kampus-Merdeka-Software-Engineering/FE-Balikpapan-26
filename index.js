@@ -1,4 +1,4 @@
-// Script untuk mengaktifkan fungsi next dan prev
+//next dan prev
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
 const doctorCarousel = document.querySelector('.doctor-carousel');
@@ -24,3 +24,24 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true
     }
 });
+
+
+// validasi
+document.getElementById('booking-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah pengiriman formulir default
+
+    // Validasi sederhana
+    var treatmentName = document.getElementById('treatment-name').value;
+    var doctorName = document.getElementById('doctor-name').value;
+    var bookingDate = document.getElementById('booking-date').value;
+    var complaint = document.getElementById('complaint').value;
+
+    if (!treatmentName || !doctorName || !bookingDate || !complaint) {
+        alert('Harap isi semua kolom yaaa');
+    } else {
+        // Jika formulir valid, mengirimkan data ke server menggunakan AJAX atau mengirimnya langsung ke action URL formulir
+        document.getElementById('booking-form').submit();
+    }
+});
+
+
